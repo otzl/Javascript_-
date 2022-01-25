@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let array = [1, 3, 4, 6, 7, 10, 24, 33, 72, 57];
+      let cnt = 0;
+      // let ans = [];
+      for (let i = 0; i < array.length; i++) {
+        if (array[i] % 2 == 0) {
+          // console.log(array[i]);
+          array.splice(i, 1);
+          i--;
+          cnt++;
+          // ans.push --> 배열 마지막에 데이터를 추가해주세요
+          // ans.push(array[i]);
+        }
+      }
+      console.log("남아 있는 수는 " + array);
+      // console.log("nums에 저장된 짝수는" + ans + "이며 총" + cnt + "개 입니다.");
+
+      let array2 = [1, 2, 3, 4, "승환", "우지", []];
+    </script>
+  </body>
+</html>
